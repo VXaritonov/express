@@ -1,6 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
-const CopyWebpackPlugin = require( 'copy-webpack-plugin' );
 const path = require('path');
 
 module.exports = {
@@ -19,14 +18,6 @@ module.exports = {
             template: "./src/index.html", 
             filename: "./index.html"
         }),
-        new CopyWebpackPlugin( {
-            patterns: [
-                {
-                    from: path.resolve( __dirname, 'src/images' ),
-                    to: path.resolve( __dirname, 'dist/images' )
-                }
-            ]
-        } ),
     ],
     module: {
         rules: [

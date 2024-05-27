@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import png from './images/image.png'
+import App from './containers/app.jsx';
 
 import "./index.css"
 
 const Index = () => {
     return (
         <div className='app'>
-            WELCOME TO REACT APP!
-            <img src={png} />
+            <App />
         </div>
     )
 };
