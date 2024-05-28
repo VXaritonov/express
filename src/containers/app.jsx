@@ -7,11 +7,12 @@ import {
 
 import Main from "./main";
 import Image from "./image";
+import StyleExample from './style-example';
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Main />,
+        element: <StyleExample />,
     },
     {
         path: "/image",
