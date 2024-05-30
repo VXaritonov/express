@@ -2,9 +2,10 @@
   "name": "express",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon server/index.js",
-    "dev": "webpack --mode development && node server/index.js",
-    "build": "webpack --mode development"
+    "start": "webpack --mode development && nodemon server/index.js",
+    "build": "webpack --mode development",
+    "dev": "webpack-dev-server --hot --mode development && nodemon server/index.js",
+    "docker": "docker-compose up"
   },
   "dependencies": {
     "axios": "^1.7.2",

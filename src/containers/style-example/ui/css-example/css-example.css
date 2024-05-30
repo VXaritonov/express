@@ -1,3 +1,96 @@
 .css-example {
-    background-color: yellow;   
+    background-color: yellow;
+}
+
+.css-example__title {
+    font-size: 32px;
+    text-align: center;
+    padding: 32px;
+    border-bottom: 3px solid black;
+}
+
+.css-example__container-title {
+    font-size: 24px;
+    text-align: center;
+
+    padding: 24px;
+    border-bottom: 2px solid black;
+}
+
+.css-example__flex-item,
+.css-example__grid-item,
+.css-example__flex-title {
+    font-size: 20px;
+    background-color: blue;
+    color: yellow;
+}
+
+.css-example__flex-item,
+.css-example__flex-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.css-example__flex {
+    display: flex;
+    gap: 16px;
+
+    padding: 24px;
+    border-bottom: 1px solid black;
+}
+
+.css-example__flex + .css-example__flex {
+    margin-top: 24px;
+}
+
+.css-example__grid {
+    display: grid;
+    gap: 16px;
+}
+
+.css-example__flex_jc-end {
+    justify-content: end;
+}
+
+.css-example__flex_ai-end {
+    align-items: end;
+}
+
+.css-example__flex_jc-center {
+    justify-content: center;
+}
+
+.css-example__flex_ai-center {
+    align-items: center;
+}
+
+.css-example__flex_jc-sb {
+    justify-content: space-between;
+}
+
+.css-example__flex_jc-sa {
+    justify-content: space-around;
+}
+
+.css-example__s1 {
+    width: 100px;
+    height: 100px;
+}
+
+.css-example__s2 {
+    width: 150px;
+    height: 150px;
+}
+
+.css-example__s3 {
+    width: 200px;
+    height: 200px;
+}
+
+.css-example__flex_wrap {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
