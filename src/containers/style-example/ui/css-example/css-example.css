@@ -1,134 +1,132 @@
 .css-example {
-    background-color: yellow;
-}
+    &__title {
+        font-size: 32px;
+        text-align: center;
+        padding: 32px;
+        border-bottom: 3px solid black;
+    }
 
-.css-example__title {
-    font-size: 32px;
-    text-align: center;
-    padding: 32px;
-    border-bottom: 3px solid black;
-}
+    &__container-title {
+        font-size: 24px;
+        text-align: center;
+    
+        padding: 24px;
+        border-bottom: 2px solid black;
+    }
 
-.css-example__container-title {
-    font-size: 24px;
-    text-align: center;
+    &__flex-item,
+    &__grid-item,
+    &__flex-title,
+    &__grid-title {
+        font-size: 20px;
+        background-color: blue;
+        color: yellow;
+    }
 
-    padding: 24px;
-    border-bottom: 2px solid black;
-}
+    &__flex-item,
+    &__flex-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
-.css-example__flex-item,
-.css-example__grid-item,
-.css-example__flex-title,
-.css-example__grid-title {
-    font-size: 20px;
-    background-color: blue;
-    color: yellow;
-}
-
-.css-example__flex-item,
-.css-example__flex-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.css-example__flex {
-    display: flex;
-    gap: 16px;
-
-    padding: 24px;
-    border-bottom: 1px solid black;
-}
-
-.css-example__flex-fdc {
-    flex-direction: column;
-}
-
-.css-example__flex + .css-example__flex {
-    margin-top: 24px;
-}
-
-.css-example__grid {
-    display: grid;
-    gap: 16px;
-}
-
-.css-example__flex_jc-end {
-    justify-content: end;
-}
-
-.css-example__flex_ai-end {
-    align-items: end;
-}
-
-.css-example__flex_jc-center,
-.css-example__grid_jc-center {
-    justify-content: center;
-}
-
-.css-example__flex_ai-center,
-.css-example__grid_ai-center {
-    align-items: center;
-}
-
-.css-example__flex_jc-sb {
-    justify-content: space-between;
-}
-
-.css-example__flex_jc-sa {
-    justify-content: space-around;
-}
-
-.css-example__s1 {
-    width: 100px;
-    height: 100px;
-}
-
-.css-example__s2 {
-    width: 150px;
-    height: 150px;
-}
-
-.css-example__s3 {
-    width: 200px;
-    height: 200px;
-}
-
-.css-example__flex_wrap {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.css-example__grid {
-    display: grid;
-
-    gap: 24px 16px;
-
-    padding: 24px;
-    border-bottom: 1px solid black;
-}
-
-.css-example__grid-tc {
-    grid-template-columns: repeat(auto-fill, 200px);
-}
-
-.css-example__grid-tc2 {
-    grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
-}
-
-.css-example__grid-tr {
-    grid-template-rows: repeat(4, 200px);
-}
-
-.css-example__grid-tr2 {
-    grid-template-rows: repeat(2, 200px);
-    grid-template-columns: repeat(2, minmax(auto, 300px));
-}
-
-.css-example__grid-ac {
-    grid-template-columns: repeat(3, 200px);
-    grid-auto-columns: 200px;
+    &__flex {
+        display: flex;
+        gap: 16px;
+    
+        padding: 24px;
+        border-bottom: 1px solid black;
+    }
+    
+    &__flex-fdc {
+        flex-direction: column;
+    }
+    
+    &__flex + &__flex {
+        margin-top: 24px;
+    }
+    
+    &__grid {
+        display: grid;
+        gap: 16px;
+    }
+    
+    &__flex_jc-end {
+        justify-content: end;
+    }
+    
+    &__flex_ai-end {
+        align-items: end;
+    }
+    
+    &__flex_jc-center,
+    &__grid_jc-center {
+        justify-content: center;
+    }
+    
+    &__flex_ai-center,
+    &__grid_ai-center {
+        align-items: center;
+    }
+    
+    &__flex_jc-sb {
+        justify-content: space-between;
+    }
+    
+    &__flex_jc-sa {
+        justify-content: space-around;
+    }
+    
+    &__s1 {
+        width: 100px;
+        height: 100px;
+    }
+    
+    &__s2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    &__s3 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    &__flex_wrap {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__grid {
+        display: grid;
+    
+        gap: 24px 16px;
+    
+        padding: 24px;
+        border-bottom: 1px solid black;
+    }
+    
+    &__grid-tc {
+        grid-template-columns: repeat(auto-fill, 200px);
+    }
+    
+    &__grid-tc2 {
+        grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
+    }
+    
+    &__grid-tr {
+        grid-template-rows: repeat(4, 200px);
+    }
+    
+    &__grid-tr2 {
+        grid-template-rows: repeat(2, 200px);
+        grid-template-columns: repeat(2, minmax(auto, 300px));
+    }
+    
+    &__grid-ac {
+        grid-template-columns: repeat(3, 200px);
+        grid-auto-columns: 200px;
+    }    
 }

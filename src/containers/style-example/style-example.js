@@ -36,7 +36,7 @@ const StyleExample = () => {
     }
 
     return (
-        <>
+        <div className={styles.container}>
             <div className={styles.menu}>
                 {['css', 'module', 'bem', 'scss', 'less', 'post'].map((el) => {
                     const handleExampleChange = (value) => () => {
@@ -49,7 +49,7 @@ const StyleExample = () => {
                 })}
             </div>
             {renderContent()}
-        </>
+        </div>
     )
 }
 

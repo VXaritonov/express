@@ -5,7 +5,7 @@ import './scss-example.scss'
 const ScssExample = () => {
     return (
         <div className='scss-example'>
-           Scss example
+            <div className='scss-example__title'>Scss example</div>
         </div>
     )
 }
