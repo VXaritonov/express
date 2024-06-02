@@ -1,0 +1,19 @@
+.menu {
+    background-color: navy;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 24px
+}
+
+.menu-item {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 24px;
+    color: yellow;
+    cursor: pointer;
+    border-bottom: 3px solid yellow;
+}

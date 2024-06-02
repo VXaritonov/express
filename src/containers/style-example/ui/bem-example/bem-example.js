@@ -8,7 +8,8 @@ const cn = createCn('bem-example');
 const BemExample = () => {
     return (
         <div className={cn()}>
-           Bem example
+            <div className={cn('title')}>Bem example</div>
+           
         </div>
     )
 }
